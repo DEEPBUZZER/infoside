@@ -13,6 +13,18 @@ if(!isset($_SESSION["username"])){
   </head>
   <body>
     <h1>Top Secret</h1>
+      <form method="post" enctype="multipart/form-data">
+    	<label>Wählen Sie eine Textdatei (*.txt, *.html usw.) von Ihrem Rechner aus.
+      <input name="datei" type="file" size="50" accept="text/*"> 
+    </label>  
+  <button>… und ab geht die Post!</button>
+</form>
+
+
+
+
     <a href="logout.php">Abmelden</a>
   </body>
+
+ 
 </html>

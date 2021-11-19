@@ -90,43 +90,7 @@ nav a:focus::after {
 }
 
 
-/* ===================== STYLE SWITCHER ============================= */
 
-#styleswitcher {
-  max-width: 60em;
-  margin: 0 auto;
-}
-
-#styleswitcher li {
-  list-style-type: none;
-  display: inline-block;
-}
-
-#styleswitcher button {
-  border: 1px solid transparent;
-  border-radius: 0.2em;
-  color: white;
-  width: 4.5em;
-  text-align: center;
-}
-
-[data-stylesheet="./css/violet.css"] {
-  background: #9357b9;
-}
-
-[data-stylesheet="./css/standard.css"] {
-  background: #28729a;
-}
-
-[data-stylesheet="./css/green.css"] {
-  background: #8db243;
-  color: black;
-}
-
-#styleswitcher button[data-stylesheet="./css/yellow.css"] {
-  background: #dfac20;
-  color: black;  
-}
 
 /* ohne die Angabe der id hätte der Attributselektor eine geringere Spezifität und die Farbangabe des Texts wäre ignoriert worden. */
 
@@ -254,20 +218,25 @@ main {
 
 /* Navigationselemente werden untereinander angezeigt */
 
+
+
 nav ul {
   display: flex;
   flex-direction: column;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 nav li {
   margin: .3em 0;
   flex: 1 1 100%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 nav a {
   width: 95%;
   margin: 0 5%;
   border-radius: .5em;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 [aria-current=page] {
