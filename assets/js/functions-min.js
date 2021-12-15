@@ -1,4 +1,4 @@
-! function (t, e, i, n) {
+  ! function (t, e, i, n) {
   "use strict";
 
   function s(t, e, i) {
